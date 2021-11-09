@@ -11,8 +11,6 @@ const App = () => {
 
   return (
     <div>
-      <Header />
-
       <div className="ui container">
         <div>
           <ListForm
