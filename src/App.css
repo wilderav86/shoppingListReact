@@ -1,38 +1,105 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: rosybrown;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+form {
+  min-height: 20vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  border: none;
+}
+
+form input,
+form button {
+  padding: 0.5rem;
+  font-size: 2rem;
+  background: white;
+}
+
+.list-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rosybrown;
+}
+
+.item-list {
+  min-width: 30%;
+  list-style: none;
+  background-color: rosybrown;
+}
+
+.item-container {
+  margin: 0.5rem;
+  background-color: rosybrown;
+  font-size: 1.5rem;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 1s ease;
+}
+
+.item li {
+  flex: 1;
+  background-color: rosybrown;
+}
+
+.list-item {
+  padding: 0rem 0.5rem;
+}
+
+.trash-btn,
+.complete-btn {
   color: white;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+  display: flex;
+  justify-content: flex-end;
+  align-content: flex-end;
 }
 
-.App-link {
-  color: #61dafb;
+.complete-btn {
+  background-color: seagreen;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.trash-btn {
+  background-color: red;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.increment-button-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.increase-btn,
+.decrease-btn {
+  display: flex;
+  align-content: flex-start;
+}
+
+.complete-delete-btn-container {
+  display: flex;
+  align-content: flex-start;
+}
+
+.quantity-container {
+  display: flex;
+  justify-content: flex-start;
+  padding: 10px;
+  background-color: rosybrown;
 }
